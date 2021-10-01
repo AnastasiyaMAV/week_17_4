@@ -8,28 +8,27 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="shortcut icon" href="image/icon.png" type="image/png"><!--Адрес иконки-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="card border-primary card w-50" style="margin-top: 20px; margin-left: 20px;"> 
+    <div class="card border-primary card w-50 marginStyleForCard"> 
         <div class="card-header bg-primary text-white">
             Генератор случайных чисел 
         </div>
         <div class="card-body">
-            <form action="#" role="search">
+            <form>
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button type="submit" class="btn btn-primary" onclick="randomNumbers()">Сгенировать 10 случайных чисел (от -10 до 10)</button>
+                        <button type="button" class="btn btn-primary" onclick="randomNumbers()">Сгенировать 10 случайных чисел (от -10 до 10)</button>
                     </span>
                 </div>
-                <input type="text" class="form-control" id="randNumber" placeholder="Сгенирированные числа: " value="" style="margin-top: 20px;" disabled>
-                <input type="text" class="form-control" id="minNumber" placeholder="Минимальное число:" value="" style="margin-top: 20px;" disabled>
-                <input type="text" class="form-control" id="maxNumder" placeholder="Максимальное число:" value="" style="margin-top: 20px;" disabled>
-                <input type="text" class="form-control" id="srArifmNumber" placeholder="Среднее арифметическое:" value="" style="margin-top: 20px;" disabled>
-                <input type="text" class="form-control" id="sumNumber" placeholder="Сумма чисел:" value="" style="margin-top: 20px;" disabled>
-                <input type="text" class="form-control" id="multiplNumber" placeholder="Произведение чисел:" value="" style="margin-top: 20px;" disabled>
+                <input type="text" class="form-control marginStyleForInput" id="randNumber" placeholder="Сгенирированные числа: " disabled>
+                <input type="text" class="form-control marginStyleForInput" id="minNumber" placeholder="Минимальное число:" disabled>
+                <input type="text" class="form-control marginStyleForInput" id="maxNumder" placeholder="Максимальное число:" disabled>
+                <input type="text" class="form-control marginStyleForInput" id="srArifmNumber" placeholder="Среднее арифметическое:" disabled>
+                <input type="text" class="form-control marginStyleForInput" id="sumNumber" placeholder="Сумма чисел:" disabled>
+                <input type="text" class="form-control marginStyleForInput" id="multiplNumber" placeholder="Произведение чисел:" disabled>
             </form>
         </div>
     </div>
